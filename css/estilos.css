@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+  width: 80%;
+  margin: auto;
+}
+
+.contenedorF{
+  width: 80%;
+  margin: auto;
+}
+
+
+h1{
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+h2{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3, h4 {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p{
+  font-size: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+hr{
+border: 1px solid #ffffff;
+}
+
+
+.fondo-1{
+  width: 100%;
+  background-color: #3e606f;
+  padding-top: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.fondo-2{
+  width: 100%;
+  background-color: #7a7a7a;
+  padding-top: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+
+a:link {
+  background-color: #76EBFF;
+  color: #FFFFFF;
+}
+
+a:visited {
+  background-color: #FFFFFF;
+  color: #7a7a7a;
+}
+
+a:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+a:active {
+  background-color: #030856;
+  color: #FFFFFF;
+}
+
+input{
+	width: 20%;
+	height: 40px;
+	background: #e0dede;
+	margin: 20px auto;
+	padding: 5px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	text-align: center;
+}
+
+input:focus{
+	width: 20%;
+	height: 40px;
+	background: #e0dede;
+	margin: 20px auto;
+	padding: 5px;
+	border:#030856 2px solid;
+	outline: none;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.primerHijo :first-child {
+  color: #CDBFFF;
+	
+}
+.Fletter1 p::first-letter {
+  color: #CDBFFF;
+}
+
+
+.letter2 p::first-letter {
+  color: #CDBFFF;
+  font-size: 50px;
+}
+
+.Fline p::first-line {
+  color: #CDBFFF;
+
+}
+
+p.Nota::before {
+  content: "Aviso: ";
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p.img::before {
+  content: url("../img/html.png");
+}
+
+p.Nota2::before {
+  content: "<em>Aviso:</em> ";
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p.Autor::after {
+  content: " (texto tomado de xxxxxxxx ).";
+}
+
+p::selection {
+  color: #00BAC3;
+  background:#014744 ;
+}

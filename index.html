@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Pseudoclases y Pseudoelementos</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+	
+  <body>
+    <!-- Pseudoclases y Pseudoelementos -->
+    <section class="fondo-1" id="inicio">
+      <div class="contenedor">
+        <h1>Pseudoclases y Pseudoelementos</h1>
+      </div>
+    </section>
+	  
+	   <!-- Pseudoclases -->
+    <section class="fondo-2" id="pseudoclases">
+      <div class="contenedor">
+		<h2>Pseudoclases</h2>
+        <p>Una pseudoclase es un selector que marca los elementos que están en un estado específico, por ejemplo, los que son el primer elemento de su tipo, o aquellos por los que el cursor les pasa por encima. Tienden a actuar como si hubieras aplicado una clase en una parte determinada del documento y, a menudo, ayudan a reducir el exceso de clases y proporcionan un marcado más flexible y fácil de mantener.
+		<strong>Las pseudoclases son palabras clave que comienzan con dos puntos:</strong></p>
+      </div>
+    </section>
+	
+	  
+    <!--link - visited -->
+    <section class="fondo-2" id="link-visited">
+      <div class="contenedor">
+		<h3>:link y :visited</h3>
+        <p id="parrafo-1">La pseudo clase :link (o a:link) permite especificar el aspecto de los enlaces que todavía no han sido visitados.<br>
+ 		Este párrafo contiene <a href="#parrafo-2">un enlace,</a> al párrafo siguiente</p>
+		<p id="parrafo-2">La pseudo clase :visited (o a:visited) permite especificar el aspecto de los enlaces que sí han sido visitados.<br>
+ 		Este párrafo contiene <a href="#parrafo-1">un enlace,</a> al párrafo anterior</p>
+		  <hr/>
+      </div>
+    </section>
+	 
+    <!-- Hover -->
+    <section class="fondo-2" id="hover">
+      <div class="contenedor">
+		<h3>:hover</h3>
+        <p>La pseudo-clase :hover permite especificar el aspecto del elemento sobre el que se encuentra el ratón (solo interviene si el usuario pasa el cursor sobre un elemento, normalmente un enlace).<br>
+		  Cuando se hace clic en <a href="#">este enlace,</a> el enlace se muestra sobre fondo negro y letra blanca.</p>
+      <hr/>
+	 </div>
+    </section>
+	  
+	  
+    <!-- active -->
+    <section class="fondo-2" id="active">
+      <div class="contenedor">
+		<h3>:active</h3>
+        <p>La pseudo-clase :active permite especificar el aspecto de un elemento cuando se hace clic sobre él y mientras se mantiene el botón del ratón apretado.<br>
+		  Cuando se mantiene clic en <a href="#">este enlace,</a> el enlace se muestra sobre fondo azul oscuro y letra blanca.</p>
+		  <hr/>
+      </div>
+    </section>
+	  
+	 <!-- focus -->
+    <section class="fondo-2" id="focus">
+      <div class="contenedor">
+		<h3>:focus</h3>
+		   <p>La pseudo-clase :focus permite especificar el aspecto de un elemento cuando este tiene el foco. Los elementos que admiten el foco en una página web son aquellos que reaccionan a entrada por teclado (solo interviene si el usuario selecciona el elemento con los controles del teclado. Por ejemplo, los elementos de los formularios o los enlaces).</p>
+
+		  <form>
+				<input type="text" name="1" placeholder="Texto-1" required="">
+				<input type="text" name="2" placeholder="Texto-2" required="">
+				<input type="text" name="3" placeholder="Texto-3" required="">
+				<input type="text" name="4" placeholder="Texto-4" required="">
+	     </form>
+	      <p>En el ejemplo siguiente, al hacer clic en un campo de texto (o cambiar de campo con el tabulador), el campo seleccionado se resalta con un borde azul .</p>
+		  <hr/>
+      </div>
+    </section>
+	  
+	  
+    <!-- first-child -->
+    <section class="fondo-2" id="first">
+      <div class="contenedor">
+		<h3>:first-child</h3>
+        <div class="primerHijo"><p>La pseudo-clase :first-child hace referencia al primer elemento de un tipo contenido dentro de otro. El ejemplo siguiente muestra cómo identificar al primer párrafo dentro de una división sin necesidad de asignar ninguna clase al párrafo.</p>
+		  <p>Morbi mollis efficitur gravida. Vivamus pellentesque ipsum eget tortor aliquam euismod. Etiam semper leo risus, vel tincidunt nisi eleifend et. Nulla facilisi. Nulla ut orci sit amet velit auctor scelerisque. Suspendisse sed aliquet lorem, ut lobortis arcu. Suspendisse a lectus ultrices, facilisis nisi at, interdum metus.</p>
+		  <p>Morbi mollis efficitur gravida. Vivamus pellentesque ipsum eget tortor aliquam euismod. Etiam semper leo risus, vel tincidunt nisi eleifend et. Nulla facilisi. Nulla ut orci sit amet velit auctor scelerisque. Suspendisse sed aliquet lorem, ut lobortis arcu. Suspendisse a lectus ultrices, facilisis nisi at, interdum metus.</p></div>
+      </div>
+    </section>
+	  
+	  	  
+	   <!-- Pseudoelementos -->
+    <section class="fondo-1" id="pseudoElementos">
+      <div class="contenedor">
+		<h2>Pseudoelementos</h2>
+        <p>Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento. </p>
+      </div>
+    </section>
+	
+	    
+    <!-- before -->
+    <section class="fondo-1" id="before">
+      <div class="contenedor">
+		<h3>::before y&nbsp; ::after</h3>
+		<p>Los pseudo-elementos ::before y ::after permiten añadir contenido a un elemento desde la hoja de estilo, al principio o al final del elemento.<br>
+		El contenido generado no puede seleccionarse con el ratón (para copiarlo y pegarlo en otro documento, por ejemplo).<br>
+		El contenido generado mediante la propiedad content puede incluir texto, una imagen indicando su URL, No está permitido incluir etiquetas html en la propiedad content. Los navegadores muestran las etiquetas como texto, no como código html.</p>
+		<h3>Ejemplo ::after</h3>
+		<p class="Nota">Este párrafo es un párrafo con una clase "Nota" para poner antes.</p>
+		<p class="img">Este párrafo es un párrafo con una clase "img" para poner una imagen antes.</p>
+		<p class="Nota2">Este párrafo es un párrafo con una clase donde muestra la propiedad content que no toma etiquetas.</p>
+      </div>
+    </section>
+	
+	    
+    <!-- after -->
+    <section class="fondo-1" id="after">
+      <div class="contenedor">
+		<h3>Ejemplo ::before</h3>
+		<p class="Autor">Este párrafo es un párrafo con clase "autor" donde se muestra la cita al final del parrafo.</p>
+		  <hr/>
+      </div>
+    </section>
+
+	
+    <!-- Firts-line -->
+    <section class="fondo-1" id="FirstLine">
+		<h3>::first-line</h3>
+        <p>El pseudo-elemento ::first-line permite especificar el aspecto de la primera línea de texto.</p>
+      
+		<div class="contenedor Fline">
+		  <h4>ejemplo</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac condimentum sapien, quis congue felis. Aenean ullamcorper leo sit amet neque iaculis efficitur. Fusce dui ex, vestibulum sit amet dignissim sit amet, lobortis in sem. Suspendisse dapibus nulla sem, et dictum tortor venenatis eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc convallis, ligula id dignissim condimentum, quam erat pulvinar tortor, a maximus felis dolor vitae est. Etiam at laoreet leo. In tristique nunc et neque pharetra, eu tempus augue vestibulum. Aliquam ac finibus metus. Fusce nisi turpis, suscipit sed nulla hendrerit, tempus ultricies ipsum. Sed molestie felis tortor, nec dignissim sapien faucibus eu. Donec a erat mi. Donec sit amet turpis rutrum, convallis purus non, pharetra augue. Pellentesque sem dui, eleifend eget hendrerit eu, dignissim ac nulla. Pellentesque eget elementum risus, in ultrices lectus. Nunc elementum libero at lorem condimentum viverra.</p>
+		  <hr/>
+      </div>
+    </section>
+	
+	    
+    <!-- First Letter1 -->
+    <section class="fondo-1" id="FirstLetter1">
+		<h3>::first-letter</h3>
+		  <p>El pseudo-elemento ::first-letter permite especificar el aspecto de la primera letra de texto.</p>
+      <div class="contenedor Fletter1">
+		  <h4>ejemplo 1</h4>
+			<p>La primera letra de este párrafo se tiene que ver en un color diferente.</p>
+			<p>Y la primera de éste también.</p>
+			<p>1 Si es número, también se ve en un color diferente.</p>
+      </div>
+    </section>
+	  
+ <!-- First Letter2 -->
+    <section class="fondo-1" id="FirstLetter2">
+      <div class="contenedor letter2">
+		  <h4>ejemplo 2</h4>
+			<p>La primera letra de este párrafo es una letra capital.</p>
+			  <hr/>	
+      </div>
+    </section>
+
+	   <!-- selection -->
+    <section class="fondo-1" id="selection">
+      <div class="contenedor selection1">
+		<h2>::selection</h2>
+        <p>Coge la porción del texto que se está seleccionando por el usuario.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac condimentum sapien, quis congue felis. Aenean ullamcorper leo sit amet neque iaculis efficitur. Fusce dui ex, vestibulum sit amet dignissim sit amet, lobortis in sem. Suspendisse dapibus nulla sem, et dictum tortor venenatis eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc convallis, ligula id dignissim condimentum, quam erat pulvinar tortor, a maximus felis dolor vitae est. Etiam at laoreet leo. In tristique nunc et neque pharetra, eu tempus augue vestibulum. Aliquam ac finibus metus. Fusce nisi turpis, suscipit sed nulla hendrerit, tempus ultricies ipsum. Sed molestie felis tortor, nec dignissim sapien faucibus eu. Donec a erat mi. Donec sit amet turpis rutrum, convallis purus non, pharetra augue. Pellentesque sem dui, eleifend eget hendrerit eu, dignissim ac nulla. Pellentesque eget elementum risus, in ultrices lectus. Nunc elementum libero at lorem condimentum viverra.</p>
+      </div>
+    </section>
+	
+	  
+  </body>
+</html>
